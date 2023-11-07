@@ -26,7 +26,7 @@ int main(void)
 
     for (int k = 0; k < N; k++)
     {
-         result += (double)ary[k] / M * 100;
+         result += (double)ary[k] / M * 100;  //convert data type from int to double
     }
 
     printf("%.1lf\n", result/N);
