@@ -9,6 +9,11 @@ int main()
     scanf("%d %d", &N, &M);
     int *ary = (int *)malloc(N * sizeof(int));
 
+    if (ary == NULL)
+    {
+        exit(1);
+    }
+
     for (int x = 0; x < N; x++)
     {
         ary[x] = x+1;
